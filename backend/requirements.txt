@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+numpy<2.0
+sentence-transformers
+soynlp
+torch
+sqlalchemy
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* v0가 준 예쁜 파스텔톤 테마 (OKLCH 색상) */
+    --background: 99% 0.005 240; /* oklch 값에서 함수 제외하고 숫자만 남김 */
+    --foreground: 20% 0.02 240;
+    
+    --card: 100% 0 0;
+    --card-foreground: 20% 0.02 240;
+    
+    --popover: 100% 0 0;
+    --popover-foreground: 20% 0.02 240;
+    
+    --primary: 55% 0.15 240;
+    --primary-foreground: 99% 0 0;
+    
+    --secondary: 75% 0.08 240;
+    --secondary-foreground: 20% 0.02 240;
+    
+    --muted: 96% 0.01 240;
+    --muted-foreground: 50% 0.02 240;
+    
+    --accent: 88% 0.05 240;
+    --accent-foreground: 20% 0.02 240;
+    
+    --destructive: 57.7% 0.245 27.325;
+    --destructive-foreground: 99% 0 0;
+    
+    --border: 92% 0.01 240;
+    --input: 92% 0.01 240;
+    --ring: 55% 0.15 240;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 15% 0.02 240;
+    --foreground: 95% 0.01 240;
+    
+    --card: 18% 0.02 240;
+    --card-foreground: 95% 0.01 240;
+    
+    --popover: 18% 0.02 240;
+    --popover-foreground: 95% 0.01 240;
+    
+    --primary: 65% 0.15 240;
+    --primary-foreground: 99% 0 0;
+    
+    --secondary: 25% 0.05 240;
+    --secondary-foreground: 95% 0.01 240;
+    
+    --muted: 22% 0.02 240;
+    --muted-foreground: 65% 0.02 240;
+    
+    --accent: 25% 0.05 240;
+    --accent-foreground: 95% 0.01 240;
+    
+    --destructive: 39.6% 0.141 25.723;
+    --destructive-foreground: 99% 0 0;
+    
+    --border: 25% 0.02 240;
+    --input: 25% 0.02 240;
+    --ring: 65% 0.15 240;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
