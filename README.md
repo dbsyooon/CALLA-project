@@ -4,7 +4,7 @@
 
 # **CALLA**
 
-**CALLA**은 *국민건강영양조사(KNHANES)* 데이터를 활용해
+CALLA은 *국민건강영양조사(KNHANES)* 데이터를 활용해
 사용자의 건강 정보를 분석하고, AI 기반 자연어 입력을 통해 통계적 비교·건강 인사이트를 제공하는 건강 분석 웹 애플리케이션입니다.
 Calla AI 엔진이 사용자의 텍스트 입력을 이해하고 건강 지표를 자동 추출하여 연령·성별 그룹 기반의 통계 분석과 질병 위험도를 제공합니다.
 
@@ -12,7 +12,7 @@ Calla AI 엔진이 사용자의 텍스트 입력을 이해하고 건강 지표�
 
 ## 🚀 **주요 기능**
 
-### 1. **자연어 기반 건강 분석**
+### 1. 자연어 기반 건강 분석
 
 사용자가 자연어로 입력한 문장에서 건강 정보를 자동 추출합니다.
 
@@ -30,7 +30,7 @@ Calla AI 엔진이 사용자의 텍스트 입력을 이해하고 건강 지표�
 
 ---
 
-### 2. **통계적 분석**
+### 2. 통계적 분석
 
 국민건강영양조사(KNHANES) 데이터를 기준으로
 동일 연령대·성별 집단과 비교 분석을 수행합니다.
@@ -43,7 +43,7 @@ Calla AI 엔진이 사용자의 텍스트 입력을 이해하고 건강 지표�
 
 ---
 
-### 3. **질병 위험도 평가**
+### 3. 질병 위험도 평가
 
 주요 만성질환에 대한 위험도를 규칙 기반으로 평가합니다.
 
@@ -57,7 +57,7 @@ Calla AI 엔진이 사용자의 텍스트 입력을 이해하고 건강 지표�
 
 ---
 
-### 4. **대시보드**
+### 4. 대시보드
 
 사용자의 건강 정보를 시각적으로 제공합니다.
 * 개인 건강 요약 카드
@@ -66,32 +66,30 @@ Calla AI 엔진이 사용자의 텍스트 입력을 이해하고 건강 지표�
 
 ---
 
-## 🛠️ **기술 스택**
+## 🛠️ 기술 스택
 
 ### **Backend**
 
-* **FastAPI**
-* **SQLite + SQLAlchemy ORM**
-* **인증**: JWT (python-jose), bcrypt
-* **AI/ML**
-
+* FastAPI
+* SQLite + SQLAlchemy ORM
+* 인증: JWT (python-jose), bcrypt
+* AI/ML
   * Sentence Transformers (KR-SBERT-V40K-klueNLI-augSTS)
   * PyTorch
   * soynlp (Korean tokenizer)
-* **Data 처리**: pandas, numpy
+* Data 처리: pandas, numpy
 
 ### **Frontend**
-
-* **React 18 + TypeScript**
-* **Vite**
-* **React Router v7**
-* **Tailwind CSS**
-* **Radix UI 기반 커스텀 컴포넌트**
-* **Lucide Icons**
+* React 18 + TypeScript
+* Vite
+* React Router v7
+* Tailwind CSS
+* Radix UI 기반 커스텀 컴포넌트
+* Lucide Icons
 
 ---
 
-## 📊 **기술 개요 다이어그램**
+## 📊 기술 개요 다이어그램
 
 ```
 사용자 입력 → 자연어 처리(SBERT) → 지표 매칭  
