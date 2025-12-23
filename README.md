@@ -55,11 +55,11 @@
 ## 기술 스택
 
 **백엔드**
+- Python
+- SQLite
 - FastAPI - RESTful API 서버
-- Python 3.x - 프로그래밍 언어
-- SQLite - 데이터베이스
+- PyTorch
 - Sentence Transformers - 한국어 문장 임베딩 (KR-SBERT)
-- PyTorch - 딥러닝 모델 실행
 
 **프론트엔드**
 - React 18 - UI 프레임워크
